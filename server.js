@@ -6,7 +6,7 @@ ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 app.get('/',function(req , res){
     res.end("Hello");
-    console.log(req.statusCode);
+    console.log(req.path);
 });
 
 app.listen(port , ip);
